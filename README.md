@@ -2,7 +2,7 @@
 
 Deploy Debian and RHEL machines in my KVM infrastructure.
 
-## Group variables for the playbook
+## Group variables for the playbooks
 
 These variables can be in the group_vars:
 
@@ -16,7 +16,7 @@ packages:
   - List of packages to install
 ```
 
-## Host variables for the playbook
+## Host variables for the playbooks
 
 These variables must be in the host_vars:
 
