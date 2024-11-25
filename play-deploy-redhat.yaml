@@ -6,22 +6,22 @@
   become: true
   become_method: ansible.builtin.su
 
-  vars:
-    # host_vars
-    hostname: test
-    fqdn: test.local
-    address: 10.10.10.5
-    # group_vars
-    interface: enp1s0
-    gateway: 10.10.10.1
-    packages:
-      - mc
-      - vim
-      - curl
-      - wget
-      - sudo
-      - tmux
-    user: tmolnar
+  # vars:
+  #   # host_vars example
+  #   hostname: test
+  #   address: 10.10.10.5
+  #   # group_vars example
+  #   interface: enp1s0
+  #   gateway: 10.10.10.1
+  #   fqdn: test.local
+  #   packages:
+  #     - mc
+  #     - vim
+  #     - curl
+  #     - wget
+  #     - sudo
+  #     - tmux
+  #   user: tmolnar
 
   tasks:
     - name: Install the base packages
