@@ -46,10 +46,10 @@
         line: "{{ address }} {{ fqdn }} {{ hostname }}"
         state: present
 
-    - name: Set the red color prompt for root
+    - name: Set the magenta color prompt for root
       ansible.builtin.lineinfile:
         path: /root/.bashrc
-        line: PS1='[\[\033[01;31m\]\u@\h\[\033[00m\] \W]# '
+        line: PS1='[\[\033[01;35m\]\u@\h\[\033[00m\] \W]# '
         state: present
 
     - name: Set the yellow color prompt for {{ user }}
