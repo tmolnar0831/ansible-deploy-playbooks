@@ -1,26 +1,28 @@
-# Ansible Deploy Playbooks
+# System Deployment - Playbooks for Silent Operations
 
-Deploy Debian and RHEL machines in my KVM infrastructure.
+Deploy & configure Debian or RHEL virtual machines automatically.
 
-## Group variables for the playbooks
+## Group level variables
 
-These variables can be in the group_vars:
+These variables should be in the group_vars:
 
 ```yaml
-fqdn: FQDN of the machine
-interface: Main interface name
-gateway: Gateway IP address
-user: Administrative user
+fqdn:      (string) FQDN of the machine
+interface: (string) Main interface name
+gateway:   (IP addres) Gateway IP address
+user:      (string) Administrative user
 
 packages:
-  - List of packages to install
+  - (list) List of packages to install
 ```
 
-## Host variables for the playbooks
-
-These variables must be in the host_vars:
+## Host level variables -> host_vars/
 
 ```yaml
-hostname: Hostname of the machine
-address: IP address of the machine
+hostname: (string) Hostname of the machine
+address:  (IP address) IP address of the machine
 ```
+
+## License
+
+MIT
